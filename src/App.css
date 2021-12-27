@@ -1,153 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
 
 * {
   margin: 0 auto;
   padding: 0 auto;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 
 body {
-  background: #13182e;
-  color: #e9e5d4;
-}
-
-.todo-app {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  width: 500px;
-  min-height: 700px;
-  background: #1b2036;
+  background-color: #2a92df;
   text-align: center;
-  margin: 128px auto;
-  border-radius: 5px;
-  padding-bottom: 32px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  font-family: cursive;
 }
 
 h1 {
-  margin: 32px 0;
-  color: #FF0266;
-  font-size: 24px;
+  color: white;
+  font-family: 'Fuzzy Bubbles', cursive;
+  padding: 20px;
 }
 
-.complete {
-  text-decoration: line-through;
-  opacity: 0.4;
-}
-
-.todo-form {
-  margin-bottom: 32px;
-}
-
-.todo-input {
-  padding: 14px 32px 14px 16px;
-  border-radius: 4px 0 0 4px;
-  border: 2px solid #03DAC6;
-  outline: none;
+.toDo {
   width: 300px;
-  background: transparent;
-  color: #FAEBD7;
+  margin: auto;
+  background-color: #d2edfb;
+  padding: 20px;
+  border-radius: 20px;
 }
 
-.todo-input::placeholder {
-  color: #e2e2e2;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.todo-button {
-  padding: 16px;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  outline: none;
-  background: #03DAC6;
-  color: #fff;
-  text-transform: capitalize;
-  
-}
-hr {
-  color: #03DAC6;
-  padding-top: 40px;
-  height: 2;
+li {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  list-style: none;
+  text-align: left;
+  color: #2a92df;
 }
 
-.todo-input.edit {
-  border: 2px solid #FF0266;
-}
-
-.todo-button.edit {
-  background: #FF0266;
-  padding: 16px 22px;
-}
-
-.todo-container {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.todo-row {
+li,
+li span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2px auto;
-  color: #fff;
-  background: #13182e;
-  padding: 16px;
-  border-radius: 5px;
-  width: 70%;
-  
 }
 
-.todo-row {
-  background-color: #13182e;
-  color: #FF0266;
-  margin-top: 12px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+li.done {
+  text-decoration: line-through;
+  font-style: italic;
+}
+li .x {
+  background-color: #d5e5f4;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: none;
+  font-size: 10px;
+  text-align: center;
+  padding: 0;
+  padding-top: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #2a92df;
+  transition: .2s;
+}
+
+.x:hover {
+  background-color: #2a92df;
+  color: white;
 }
 
 
-
-.icons {
+form {
+  border: 5px solid #3a7bd5;
+  border-radius: 10px;
   display: flex;
-  align-items: center;
-  font-size: 24px;
+}
+
+input[type='text'] {
+  width: calc(100% - 50px);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+input[type='submit'] {
+  width: 50px;
+  height: 36px;
+  background-color: #3a7bd5;
+  border: none;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  right: -1px;
   cursor: pointer;
 }
 
-.delete-icon {
-  margin-left: 25px;
+hr {
+  border-bottom: 3px soloid #3a7bd5;
+  }
+.time {
+  font-size: 2em;
   color: #fff;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 10%;
 }
-
-.edit-icon {
-  color: #f4f4f4;
-  margin-left: 25px;
+.clock {
+  margin: 30px;
+  color: #3a7bd5;
+  border: none !important;
+  border-radius: 5px;
+  padding: 5px 22px;
+  letter-spacing: 1px;
 }
-
-h4 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 200;
-}
-
-a {
-  color: #f4f4f4;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #f12b68;
-  text-decoration: none;
-}
-
-
-.footer {
-  justify-content: center;
-  margin-top: 320px;
-  text-align: center;
-  padding: 10px 20px;
-  font-family: "Josefin Sans", sans-serif;
-  height: 50px;
+.clock:hover {
+  background: #3a7bd5;
+  color: #fff;
 }

@@ -1,13 +1,15 @@
-import React from 'react';
-import './App.css';
-import TodoList from './components/TodoList';
+import { useState } from "react";
+import Clock from "./Clock";
+import Title from "./components/Title";
+import ToDo from "./components/ToDo";
 
-function App() {
-  return (
-    <div className='todo-app'>
-      <TodoList />
-          </div>
-  );
+export default function App() {
+    const [show, setShow] = useState()
+
+    return <main>
+        {show ? <Clock /> : ''}
+        <button className="clock" onClick={() => setShow(!show)}>click</button>
+        <Title />
+        <ToDo />
+    </main>
 }
-
-export default App;
