@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/saramazal/to-do-list/static/css/main.26d10a26.css",
+    "main.js": "/saramazal/to-do-list/static/js/main.716cde6d.js",
+    "static/js/787.51898593.chunk.js": "/saramazal/to-do-list/static/js/787.51898593.chunk.js",
+    "index.html": "/saramazal/to-do-list/index.html",
+    "main.26d10a26.css.map": "/saramazal/to-do-list/static/css/main.26d10a26.css.map",
+    "main.716cde6d.js.map": "/saramazal/to-do-list/static/js/main.716cde6d.js.map",
+    "787.51898593.chunk.js.map": "/saramazal/to-do-list/static/js/787.51898593.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26d10a26.css",
+    "static/js/main.716cde6d.js"
+  ]
+}
