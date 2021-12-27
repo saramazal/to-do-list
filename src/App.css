@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap');
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+body {
+  background: #13182e;
+  color: #e9e5d4;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 500px;
+  min-height: 700px;
+  background: #1b2036;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 5px;
+  padding-bottom: 32px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin: 32px 0;
+  color: #FF0266;
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #03DAC6;
+  outline: none;
+  width: 300px;
+  background: transparent;
+  color: #FAEBD7;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: #03DAC6;
+  color: #fff;
+  text-transform: capitalize;
+  
+}
+hr {
+  color: #03DAC6;
+  padding-top: 40px;
+  height: 2;
+}
+
+.todo-input.edit {
+  border: 2px solid #FF0266;
+}
+
+.todo-button.edit {
+  background: #FF0266;
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px auto;
+  color: #fff;
+  background: #13182e;
+  padding: 16px;
+  border-radius: 5px;
+  width: 70%;
+  
+}
+
+.todo-row {
+  background-color: #13182e;
+  color: #FF0266;
+  margin-top: 12px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-left: 25px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #f4f4f4;
+  margin-left: 25px;
+}
+
+h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+}
+
+a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f12b68;
+  text-decoration: none;
+}
+
+
+.footer {
+  justify-content: center;
+  margin-top: 320px;
+  text-align: center;
+  padding: 10px 20px;
+  font-family: "Josefin Sans", sans-serif;
+  height: 50px;
+}
