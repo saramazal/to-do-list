@@ -9,10 +9,23 @@ export default function ListItem(props) {
             })
     }
 
-    return <li className={props.done ? 'done' : ''}>
+    function updateTask(e) {
+        const newDone = e.target.checked
+
+        axios.put(`http://localhost:3030/task/${props._id}`, { done: newDone })
+            .then(() => {
+                props.refreshView()
+            })
+    }
+
+    return <li className={props.done ? 'done' : ''} >
         <label>{props.text}</label>
         <span>
-            <input type='checkbox' defaultChecked={props.done} />
+            <input
+                onChange={updateTask}
+                type='checkbox'
+                defaultChecked={props.done}
+            />
             {props.done ? null : <button
                 onClick={deleteTask}
                 className='x'
