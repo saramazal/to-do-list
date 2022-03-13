@@ -25,11 +25,12 @@ h1 {
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
 }
+
 h1:hover {
   color: #ff0266;
   transform: translate3d(0, -12px, 22px);
   cursor: pointer;
-  
+
 }
 
 .toDo {
@@ -67,6 +68,7 @@ li.done {
   text-decoration: line-through;
   font-style: italic;
 }
+
 li .x {
   background-color: #d5e5f4;
   border-radius: 50%;
@@ -90,15 +92,15 @@ li .x {
 
 
 form {
-  border: 5px solid #03dac6;
-  border-radius: 10px;
+  border: 8px solid #03dac6;
+  border-radius: 15px;
   display: flex;
 }
 
 input[type='text'] {
   width: calc(100% - 50px);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
   border: none;
   padding: 10px;
   outline: none;
@@ -112,7 +114,6 @@ input[type='submit'] {
   color: white;
   font-size: 25px;
   position: relative;
-  right: -1px;
   cursor: pointer;
 }
 
