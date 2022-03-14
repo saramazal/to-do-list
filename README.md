@@ -15,7 +15,7 @@ Full Stack MERN Todo App. With Heroku and Vercel Deploy.
 This project is part of Full-Stack Development Course "Workin" Code and Cyber College. 
 
 ## Screenshots
-![Todo List](https://github.com/saramazal/***.png)
+![Todo List](https://github.com/saramazal/to-do-list/blob/main/mazal-mern-todo.png)
 
 ## Technologies
 * [VSCode](https://code.visualstudio.com/)
