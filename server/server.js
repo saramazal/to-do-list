@@ -1,8 +1,10 @@
 require('dotenv').config({ path: './.env'})
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose')
+
 const express = require('express')
 const app = express()
+const PORT = process.env.PORT || 5000
 
 
 app.use(require('cors')())
