@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 require('./router')(app)
 
-const PORT = process.env.PORT || 3030
+const PORT = process.env.PORT || 5000
 
 // Accessing the path module
 const path = require("path");

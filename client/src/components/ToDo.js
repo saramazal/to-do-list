@@ -9,7 +9,7 @@ export default function ToDo() {
     useEffect(getTasks, [])
 
     function getTasks() {
-        axios.get('http://localhost:3030/task')
+        axios.get('http://localhost:5000/task')
             .then(result => {
                 setTasksList(result.data)
             })
